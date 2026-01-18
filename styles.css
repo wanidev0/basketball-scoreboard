@@ -1,9 +1,17 @@
 @import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
 
+:root {
+    --primary: #553E4E;
+    --secondary: #9EBC9E;
+    --accent: #E0479E;
+    --neutral: #FFCFD2;
+    --aux: #3b2326;
+}
+
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #eeeeee;
+    background-color: var(--neutral);
 }
 
 .container {
@@ -13,7 +21,7 @@ body {
 }
 
 .scoreboard {
-    background-color: #1B244A;
+    background-color: var(--primary);
     padding: 50px 75px;
     border-radius: 20px;
     display: flex;
@@ -31,14 +39,14 @@ body {
 }
 
 h3 {
-    color: #EEEEEE;
+    color: var(--neutral);
     font-size: 40px;
     margin: 0;
 }
 
 .score {
-    background-color: #080001;
-    color: #F94F6D;
+    background-color: var(--aux);
+    color: var(--accent);
     font-family: "Cursed Timer ULiL", sans-serif;
     font-size: 90px;
     padding: 20px 30px 10px 30px; 
@@ -57,34 +65,34 @@ button {
     font-family: "Cursed Timer ULiL", sans-serif;
     font-size: 18px;
     background-color: unset;
-    border: 2px solid #9AABD8;
+    border: 2px solid var(--secondary);
     border-radius: 5px;
-    color: #9AABD8;
+    color: var(--secondary);
     padding: 10px;
     transition: 0.125s 0s;
 
     &:hover {
-        border: 2px solid #F94F6D;
-        color: #eeeeee;
+        border: 2px solid var(--accent);
+        color: var(--neutral);
+        scale: .9;
     }
 
     &:active {
-        background-color: #080001;
-        border: 2px solid #F94F6D;
-        color: #eeeeee;
-        scale: 1.2;
+        background-color: var(--aux);
+        border: 2px solid var(--accent);
+        color: var(--neutral);
+        scale: 1.1;
     }
 }
 
 .btn-ng {
-    background-color: #1B244A;
-    /* border: 2px solid #080001; */
+    background-color: var(--primary);
     padding: 12px 24px 6px 24px;
     font-size: 24px;
-    box-shadow: 1px 1px 5px #1B244A;
+    box-shadow: 1px 1px 5px var(--primary);
 }
 
 .highlight {
-    box-shadow: 0px 0px 20px #F94F6D;
-    text-shadow: 0px 0px 10px #F94F6D;
+    box-shadow: 0px 0px 20px var(--accent);
+    text-shadow: 0px 0px 10px var(--accent);
 }
